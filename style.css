@@ -1,0 +1,230 @@
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+}
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1.25;
+}
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: unset;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: Pattaya;
+  font-size: 28px;
+}
+
+main {
+  color: #3A261C;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+article {
+  padding: 5%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header, footer{
+  background-color: #F72777;
+  display: block;
+  color: #fbfbf8;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-family: Pattaya;
+  font-size: 46px;
+  margin: 5px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin: 20px 0 0 0;
+}
+
+header nav ul li a {
+  color: #fbfbf8;
+  text-decoration: none;
+  margin: 0px 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Group & Items */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+}
+
+.item {
+  flex: 1;
+  margin: 0;
+}
+
+/* Articles */
+
+#intro, #contact {
+  background-color: #1fbcff;
+  color: #fbfbf8;
+  /* display: block; */
+}
+
+#intro h2 {
+  margin: 20px 0 0 0;
+}
+
+#about {
+  background-color: #fbfbf8;
+}
+
+#about li {
+  list-style: none;
+  font-style: italic;
+}
+
+#projects {
+  background-color: #E9DB11;
+}
+
+#projects img {
+  padding-top: 20px;
+}
+
+/* Icons */
+
+#contact {
+    display: flex;
+    align-items: center;
+}
+
+#contact .icon {
+  display: flex;
+}
+
+#contact .icon ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 0 75px;
+}
+
+#contact .icon ul li a {
+  color: #fbfbf8;
+  text-decoration: none;
+  margin: 0px 15px 0 0;
+}
+
+#contact .icon ul li:last-child a {
+  margin-right: 0;
+}
+
+
+/* Media Query Desktop */
+
+@media all and (min-width: 800px) {
+
+  body {
+    margin: 0 auto;
+  }
+
+  .group {
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  .item {
+    padding: 0 2% 0 0;
+  } 
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: 25px 0;
+    padding-top: 0;
+  }
+  
+  header nav {
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+
+  #contact {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+  }
+
+  #intro h2 {
+  margin: 0;
+  }
+
+}
+
+/* ---  Contact Form Design --- */
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #FCF300;
+  border-radius: 0;
+}
